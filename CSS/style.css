@@ -1,0 +1,352 @@
+@import url(fonts.css);
+
+body{
+	box-sizing: border-box;
+}
+
+.container{
+	width: 1500px;
+	margin: 0 auto;
+}
+
+.flex{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* HEADER START */
+
+.header{
+	padding: .5em 0;
+	background: rgb(92,155,188);
+background: radial-gradient(circle, rgba(92,155,188,1) 4%, rgba(12,94,141,1) 48%, rgba(12,94,141,1) 100%);
+}
+
+.header__content{
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/* DESK MENU START  */
+
+.dws-menu *{
+ margin: 0;
+ padding: 0;
+ color: #000;
+}
+.dws-menu ul,
+.dws-menu ol{
+ list-style: none;
+}
+.dws-menu > ul{
+ display: flex;
+ justify-content: center;
+}
+.dws-menu > ul li{
+	padding: .5em;
+ position: relative;
+}
+
+.dws-menu > ul li a{
+ display: flex;
+background: transparent;
+ font-family: OpenSans, Roboto, Mont;
+ font-size: 13px;
+ color: #fff;
+ text-decoration: none;
+ transition: all 0.3s ease;
+}
+
+.dws-menu > ul li a i{
+	padding-left: .1em;
+	color: #fff;
+}
+
+.dws-menu li a:hover{
+ color: #CDEBFF;
+}
+
+/*sub menu*/
+.dws-menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+ background: #0C5E8D;
+}
+.dws-menu li > ul li{
+ color: #fff;
+}
+.dws-menu li > ul li a{
+	padding: 1em;
+ color: #fff;
+ border: 1px solid #5C9BBC;
+}
+.dws-menu li > ul li a:hover{
+	color: #fff;
+	background: #5C9BBC;
+}
+.dws-menu li > ul li ul{
+ position: absolute;
+ right: -150px;
+ top: 0;
+}
+.dws-menu li:hover > ul{
+ display: block;
+}
+
+
+
+/* DESK MENU END  */
+
+.header__title{
+	font-family: OpenSans, Roboto, Mont;
+	font-size: 60px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/* SEARCH START */
+
+.header__search{
+	display: inline;
+	padding: .2em 0;
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 1em;
+}
+
+.header__search a{
+	color: #fff;
+}
+
+.magnifier{
+	padding: 0 1em;
+}
+
+
+.search{
+	padding: 1.5em 0;
+	padding-right: 38em;
+	border: none;
+	background: none;
+}
+
+/* SEARCH END */
+
+/* LANG AND LOG IN START */
+
+.header__user{
+	color: #fff;
+	font-family: Mont, Roboto, OpenSans;
+}
+
+.lang{
+	padding: .1em;
+	background: transparent;
+	border: none;
+	color: #fff;
+}
+
+select > option{
+	background: #0C5E8D;
+	border: none;
+	color: #fff;
+}
+
+.header__lang a{
+	padding: 0 .5em;
+	border-right: 1px solid #fff;
+	color: #fff;
+	font-size: 14px;
+}
+
+.header__info{
+	padding: 1em 0;
+	-ms-align-items: center;
+	align-items: center;
+	font-size: 12px;
+}
+
+.header__info_title{
+	padding-right: 1em;
+	opacity: .6;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.header__info_subtitle{
+	line-height: 1.3;
+}
+
+/* LANG AND LOG IN END */
+
+/* HEADER END */
+
+/* BUSINESS FOR SALE START */
+
+.job{
+	font-family: Roboto, Mont;
+	color: #0C5E8D;
+}
+
+.job__content{
+	padding: 3em 0;
+}
+
+.job__user{
+	flex-direction: column;
+    width: 22em;
+}
+
+.sale__title{
+	padding-top: 2em;
+	font-family: Roboto, OpenSans, Mont;
+	font-weight: 700;
+	font-size: 60px;
+}
+
+.sale__subtitle{
+	margin: 0 2em;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.ex{
+	font-size: 12px;
+	font-weight: 400;
+	font-family: OpenSans, Roboto;
+	opacity: .8;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+   color:    #5C9BBC;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #5C9BBC;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #5C9BBC;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #5C9BBC;
+}
+input{
+	padding: .7em 13em .7em 1em ;
+	border-radius: 5em;
+	border: 1px solid #5C9BBC;
+}
+.sale__select {
+	padding: 0.5em 4em .5em 1em;
+	border-radius: 5em;
+	border: 1px solid #5C9BBC;
+	font-size: 14px;
+	font-family: OpenSans, Mont, Roboto;
+	color: #5C9BBC;
+}
+
+.button{
+	padding: .5em 2em;
+	margin-left: 3em;
+	background: #0C5E8D;
+	color: #fff;
+	border: none;
+	border-radius: 2em;
+	cursor: pointer;
+}
+
+.select{
+	margin-top: 1em;
+	justify-content: flex-end;
+}
+
+.emp{
+	padding: 1em;
+	text-align: right;
+}
+
+.emp a{
+	font-family: OpenSans, Roboto;
+	font-weight: 400;
+	opacity: .8;
+	color: #5C9BBC;
+	font-size: 15px;
+}
+
+.adv{
+	text-align: right;
+}
+
+.adv a{
+	font-family: OpenSans, Roboto;
+	font-weight: 400;
+	opacity: .8;
+	color: #5C9BBC;
+	font-size: 12px;
+}
+
+.btn{
+	margin: .5em 0;
+	text-align: right;
+}
+
+
+/* BUSINESS FOR SALE END */
+
+
+/* FOOTER START */
+
+.footer{
+	padding: 3em 0;
+	background: #013655;
+}
+
+.fr{
+	justify-content: space-around;
+}
+
+.footer nav h2{
+	margin-bottom: 1em;
+	color: #fff;
+	font-family: Mont, Roboto;
+}
+
+.footer__nav a{
+	color: #fff;
+	font-family: Mont, OpenSans;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+.foot__nav ul{
+	padding: 1em 0;
+}
+
+.contact{
+	font-family: Mont, Roboto;
+	color: #fff;
+}
+
+.footer2{
+	padding: 2em 0;
+	text-align: center;
+	background: #0C5E8D;
+	color: #fff;
+	font-family: Mont, Roboto;
+}
+
+footer h2{
+	font-size: 13px;
+}
+
+/* FOOTER END */
+
